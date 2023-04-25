@@ -1,0 +1,799 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'Telefonica Bold';
+  src: url('fonts/Telefonica-Bold.eot');
+  src: url('fonts/Telefonica-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Telefonica-Bold.woff2') format('woff2'),
+    url('fonts/Telefonica-Bold.woff') format('woff'),
+    url('fonts/Telefonica-Bold.svg#Telefonica-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telefonica regular';
+  src: url('fonts/Telefonica-Regular.eot');
+  src: url('fonts/Telefonica-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Telefonica-Regular.woff2') format('woff2'),
+    url('fonts/Telefonica-Regular.woff') format('woff'),
+    url('fonts/Telefonica-Regular.svg#Telefonica-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telefonica Light';
+  src: url('fonts/Telefonica-Light.eot');
+  src: url('fonts/Telefonica-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Telefonica-Light.woff2') format('woff2'),
+    url('fonts/Telefonica-Light.woff') format('woff'),
+    url('fonts/Telefonica-Light.svg#Telefonica-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bold {
+  font-family: "Telefonica Bold", sans-serif;
+  font-weight: bold;
+}
+
+.light {
+  font-family: "Telefonica Light", sans-serif;
+  font-weight: lighter;
+}
+
+.regular {
+  font-family: "Telefonica regular", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Telefonica regular", Arial, sans-serif;
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #0b2739;
+}
+
+a {
+  color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #d3d4d3;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Telefonica Bold', Arial, sans-serif;
+  color: #019df4;
+}
+
+p,
+div {
+  font-family: "Telefonica regular", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.bluebg {
+  background-color: #019df4;
+}
+
+.blue {
+  color: #019df4;
+}
+
+.white {
+  color: #ffffff;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+section,
+footer {
+  padding: 0.5em 0;
+}
+
+footer {
+  padding: 0.5em 0 2em 0;
+}
+
+@media (min-width: 767px) {
+
+  section,
+  footer {
+    padding: 0em 0 1em 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header .container-header {
+  padding: 2em 15px 0 15px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.header .container-header .logo-movistar {
+  text-align: center;
+}
+
+.header .container-header .logo-subtel {
+  text-align: center;
+}
+
+.header .container-header .logo-movistar img {
+  width: 100%;
+  height: auto;
+  max-width: 190px;
+  min-width: 160px;
+}
+
+.header .container-header .logo-subtel img {
+  width: 100%;
+  height: auto;
+  max-width: 70px;
+}
+
+@media (min-width: 767px) {
+  .header .container-header .logo-subtel {
+    text-align: center;
+  }
+
+  .header .container-header {
+    padding: 2em 0 0 0;
+  }
+
+  .header .container-header .logo-movistar img {
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+  }
+
+  .header .container-header .logo-subtel img {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+section.intro {
+  padding: 0 0 3em 0;
+}
+
+.intro .intro-bg {
+  position: relative;
+  z-index: 1;
+  padding: 10em 0 0em 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.intro .intro-bg:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  opacity: 1;
+  z-index: -1;
+  background: url(../img/bg-montana-mobile.jpg) center 18%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  color: #019df4;
+  font-size: 1.9rem;
+}
+
+.intro .container-intro {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.intro .container-intro .logo-fon {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.4em 0 0 0;
+}
+
+.intro .container-intro .logo-fon img {
+  width: 100%;
+  height: auto;
+  max-width: 142px;
+}
+
+@media (min-width: 767px) {
+  .intro h1 {
+    color: #019df4;
+    font-size: 2.1rem;
+  }
+
+  .intro .intro-bg {
+    padding: 11em 0 0em 0;
+  }
+
+  .intro .intro-bg:before {
+    height: 91%;
+    opacity: .9;
+  }
+}
+
+@media (min-width: 991px) {
+  .intro .intro-bg {
+    max-width: 1100px;
+  }
+
+  .intro .intro-bg:before {
+    background: url(../img/bg-montana.jpg) center 11%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .intro .intro-bg:before {
+    height: 80%;
+    opacity: .8;
+  }
+}
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+.map .container-map {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.map .container-title-map {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.map .map-text {
+  padding: 0 0 0 0;
+}
+
+.map .map-text h5 {
+  font-size: 1.5em;
+}
+
+.map .map-interaction .map-foto {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.map .map-interaction .map-foto img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map .map-mini ul {
+  padding: 0 0 0 0em;
+  margin: 0 0 0 0px;
+  padding: 0 0 0 1em;
+  margin: 0 0 0 15px;
+}
+
+.map .map-mini ul li {
+  list-style-type: none;
+  list-style-type: disc;
+  font-family: 'Telefonica Bold';
+  line-height: 1.4;
+  font-size: 0.8em;
+}
+
+.map .map-mini .lista-localidades .list {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.map-interaction-container {}
+
+.map-interaction {
+  transition: all ease-in-out 0.65s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.map-interaction.map-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.map-menu ul.map-menu-toggle {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5em 0 0 0;
+}
+
+.map-menu .map-menu-toggle li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 18px 10px 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 50px;
+}
+
+.map-menu .map-menu-toggle li.filter-active {
+  background: #e63780;
+}
+
+@media (min-width: 767px) {
+  .map .map-mini ul {
+    padding: 0 0 0 1em;
+    margin: 0 0 0 15px;
+  }
+
+  .map .map-mini ul li {
+    list-style-type: disc;
+  }
+
+  .map .map-interaction .map-foto {
+    margin: 0;
+    text-align: left;
+  }
+
+  .map .map-text {
+    padding: 2.5em 0 0 0;
+  }
+
+  .map .map-interaction .map-foto img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .map .map-mini ul li {
+    font-size: 1em;
+  }
+}
+
+/*--------------------------------------------------------------
+# Map zoom
+--------------------------------------------------------------*/
+.zoom {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.zoom img {
+  display: block;
+}
+
+.zoom img::selection {
+  background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+# Bullets Beneficios y Caracteristicas
+--------------------------------------------------------------*/
+.reverse-right {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+i.bullet,
+i.bullet.reverse {
+  padding: 0 0.5em 0 0;
+}
+
+i.bullet img {
+  max-width: 26px;
+  width: 100%;
+  height: auto;
+}
+
+.info-header {
+  display: flex;
+}
+
+.info-header i.bullet {
+  order: 0;
+}
+
+.info-header h4 {
+  order: 1;
+}
+
+.info-header i.bullet.reverse {
+  order: 0;
+}
+
+.info-header h4.reverse {
+  order: 1;
+}
+
+@media (min-width: 991px) {
+  .info-header i.bullet.reverse {
+    order: 1;
+  }
+
+  .info-header h4.reverse {
+    order: 0;
+  }
+
+  i.bullet.reverse {
+    padding: 0 0 0 0.5em;
+  }
+
+  .reverse-right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Beneficios
+--------------------------------------------------------------*/
+.beneficios .beneficios-bg {
+  position: relative;
+  z-index: 1;
+  padding: 2em 0 1em 0;
+}
+
+.beneficios .beneficios-bg:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: -1;
+}
+
+.beneficios .beneficios-bg:before {
+  background: url(../img/bg-beneficios.jpg) center 70%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background: none;
+}
+
+.beneficios .container-ben {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.beneficios .section-title {
+  padding: 0 0 0.5em 0;
+}
+
+.beneficios .section-title p {
+  font-size: 1em;
+}
+
+.beneficios .info-header h4 {
+  font-family: "Telefonica regular", sans-serif;
+  color: #019df4;
+  font-size: 1.4em;
+}
+
+.beneficios .info p {
+  font-family: "Telefonica regular", sans-serif;
+  color: #ffffff;
+  font-size: 0.9em;
+  margin: 0 0 1em 0;
+}
+
+.bg-image {
+  display: block;
+  text-align: center;
+  padding: 0 0 1em 0;
+
+}
+
+.bg-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 991px) {
+  .beneficios .section-title {
+    padding: 0 0 3em 0;
+  }
+
+  .bg-image {
+    display: none;
+  }
+
+  .beneficios .info p {
+    margin: 0 0 2.5em 0;
+  }
+
+  .beneficios .section-title p {
+    font-size: 1.2em;
+  }
+
+  .beneficios .beneficios-bg:before {
+    opacity: .5;
+    background: url(../img/bg-beneficios.jpg) center 95%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .beneficios .beneficios-bg:before {
+    opacity: .6;
+    background: url(../img/bg-beneficios.jpg) center 95%;
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .beneficios .beneficios-bg {
+    padding: 4em 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .beneficios .beneficios-bg:before {
+    opacity: 1;
+    background: url(../img/bg-beneficios.jpg) center 95%;
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Caracteristicas
+--------------------------------------------------------------*/
+.caracteristicas .cara-bg {
+  position: relative;
+  z-index: 1;
+  padding: 3em 0 0em 0;
+}
+
+.caracteristicas .cara-bg:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  z-index: -1;
+}
+
+.caracteristicas .cara-bg:before {
+  background: url(../img/bg-cara.jpg) center 70%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background: none;
+}
+
+.caracteristicas .section-title h2 {
+  padding: 0 0 0 0;
+}
+
+.caracteristicas .info-header h4 {
+  font-family: "Telefonica light", sans-serif;
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+
+.caracteristicas .info p {
+  font-family: "Telefonica regular", sans-serif;
+  color: #ffffff;
+  font-size: 0.9em;
+  margin: 0 0 1em 0;
+}
+
+.bg-imagecara img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
+
+@media (min-width: 767px) {
+  .caracteristicas .section-title h2 {
+    padding: 0 0 0.5em 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .caracteristicas .info p {
+    margin: 0 0 2.5em 0;
+  }
+
+  .caracteristicas .section-title h2 {
+    padding: 0 0 2.5em 0;
+  }
+
+  .caracteristicas .cara-bg:before {
+    opacity: .6;
+    background: url(../img/bg-cara.jpg) center 95%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .caracteristicas .cara-bg:before {
+    opacity: .6;
+    background: url(../img/bg-cara.jpg) center 70%;
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .caracteristicas .cara-bg {
+    padding: 4em 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .caracteristicas .cara-bg:before {
+    opacity: 1;
+    background: url(../img/bg-cara.jpg) center 76%;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  margin-bottom: 20px;
+  padding: 50px 40px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.services .icon-box i {
+  float: left;
+  color: #f6b024;
+  font-size: 40px;
+}
+
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .icon-box h4 a {
+  color: #05579e;
+  transition: 0.3s;
+}
+
+.services .icon-box h4 a:hover {
+  color: #0880e8;
+}
+
+.services .icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer .footer-container {
+  max-width: 465px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer .footer-text {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 2rem 0 1.4rem 0;
+}
+
+.footer .btn {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer .roundedborder {
+  padding: .120rem .75rem;
+  border-radius: .50rem;
+  font-size: 1.2rem;
+}
+
+.footer .btn.btn-ir {
+  font-family: "Telefonica light", Arial, sans-serif;
+  background-color: #e63780;
+  border-color: #e63780;
+  padding: 0.2rem 2rem 0.3rem 2rem;
+  border-radius: 12%/50%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.footer .btn.btn-ir:hover {
+  background-color: #f14f93;
+  border-color: #f14f93;
+}
+
+.footer .btn.btn-ir a,
+.footer .btn.btn-ir a:hover {
+  color: #fff;
+}
+
+.footer a.footer-link {
+  color: #019df4;
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+}
+
+.footer a.footer-link:hover {
+  color: #47bdff;
+}
+
+.footer .transformemos img {
+  max-width: 332px;
+  width: 100%;
+  height: auto;
+}
